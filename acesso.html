@@ -3,17 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Redirecionando...</title>
+  <title>Abrindo o site...</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #f4f6f8;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    main {
+      padding: 32px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
-  <p>Redirecionando... <a id="destino" href="#">Clique aqui para continuar</a>.</p>
+  <main>
+    <h1>Abrindo o site...</h1>
+    <p>Se não abrir automaticamente, toque no botão abaixo.</p>
+    <a id="abrir" href="https://leotechmundial-collab.github.io/serranaemfoco/">
+      Abrir site
+    </a>
+  </main>
 
   <script>
-    // Para mudar o destino, altere somente o endereço abaixo.
+    // MUDE SOMENTE ESTE ENDEREÇO PARA TROCAR O DESTINO.
     const linkDestino =
       "https://leotechmundial-collab.github.io/serranaemfoco/";
 
-    document.getElementById("destino").href = linkDestino;
+    document.getElementById("abrir").href = linkDestino;
     window.location.replace(linkDestino);
   </script>
 </body>
